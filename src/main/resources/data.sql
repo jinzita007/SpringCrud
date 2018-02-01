@@ -7,6 +7,7 @@ CREATE TABLE `users` (
   `username` VARCHAR(50) NOT NULL COMMENT '用户名' ,
   `password` VARCHAR(255) NOT NULL COMMENT '密码' ,
   `email` VARCHAR(100) NOT NULL COMMENT '用户电子邮箱',
+  `status` tinyint(2) NOT NULL DEFAULT '0',
 PRIMARY KEY (`id`)) ENGINE = InnoDB DEFAULT CHARSET=utf8;;
 
 --
