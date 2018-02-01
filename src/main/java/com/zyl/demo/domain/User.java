@@ -6,6 +6,15 @@ public class User {
     private String username;  //用户名
     private String email;     //电子邮箱
     private String password;  //密码
+    private String status;    //活动状态
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public Long getId() {
         return id;
@@ -46,6 +55,8 @@ public class User {
                 ", username='" + username + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
+                ", status='" + status + '\'' +
                 '}';
     }
+
 }
